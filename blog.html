@@ -23,10 +23,9 @@
       };
     </script>
   </head>
-  <body class="text-black" ">
-    <div class="bg-white h-5"></div>
+  <body class="text-black ">
     <header>
-      <nav class="bg-white">
+      <nav class="mt-5">
         <div class="first-half">
           <a href="index.html">
             <button class="button">Home</button>
@@ -52,6 +51,7 @@
         </div>
       </nav>
     </header>
+
     <main>
       <div class="collapse collapse-arrow">
         <input type="radio" name="my-accordion-2" checked="checked" />
@@ -59,7 +59,13 @@
           What is the Document Object Model (DOM)?
         </div>
         <div class="collapse-content text-black">
-          <p>The Document Object Model (DOM) is a programming interface for web documents. It represents a webpage's structure as a tree of objects, allowing programming languages like JavaScript to manipulate HTML and CSS. Through the DOM, developers can dynamically modify content, structure, and styling of web pages.</p>
+          <p>
+            The Document Object Model (DOM) is a programming interface for web
+            documents. It represents a webpage's structure as a tree of objects,
+            allowing programming languages like JavaScript to manipulate HTML
+            and CSS. Through the DOM, developers can dynamically modify content,
+            structure, and styling of web pages.
+          </p>
         </div>
       </div>
       <div class="collapse collapse-arrow">
@@ -69,28 +75,45 @@
         </div>
         <div class="text-black collapse-content">
           <p>
-            To select an element from the DOM, use document.querySelector() for a single element by CSS selector or document.getElementById() for a specific ID.</p>
+            To select an element from the DOM, use document.querySelector() for
+            a single element by CSS selector or document.getElementById() for a
+            specific ID.
+          </p>
         </div>
       </div>
       <div class="collapse collapse-arrow">
         <input type="radio" name="my-accordion-2" />
         <div class="collapse-title text-xl font-medium text-black">
-          What is event delegation in the context of the DOM, and why is it useful?
+          What is event delegation in the context of the DOM, and why is it
+          useful?
         </div>
         <div class="collapse-content text-black">
-          <p>Event delegation in the DOM is a technique where a single event listener is added to a parent element to handle events from its child elements. This is useful for efficiently managing dynamic content, reducing memory usage, and avoiding multiple event listeners by utilizing event bubbling to catch events from children.</p>
+          <p>
+            Event delegation in the DOM is a technique where a single event
+            listener is added to a parent element to handle events from its
+            child elements. This is useful for efficiently managing dynamic
+            content, reducing memory usage, and avoiding multiple event
+            listeners by utilizing event bubbling to catch events from children.
+          </p>
         </div>
       </div>
       <div class="collapse collapse-arrow">
         <input type="radio" name="my-accordion-2" />
         <div class="collapse-title text-xl font-medium text-black">
-          How do you manipulate an element's attributes and styles using the DOM?
+          How do you manipulate an element's attributes and styles using the
+          DOM?
         </div>
         <div class="collapse-content text-black">
-          <p>To manipulate an element's attributes using the DOM, use setAttribute() and getAttribute(). For styles, modify the style property directly (e.g., element.style.color = "red";). You can also use classList to add, remove, or toggle CSS classes (e.g., element.classList.add("active");).</p>
+          <p>
+            To manipulate an element's attributes using the DOM, use
+            setAttribute() and getAttribute(). For styles, modify the style
+            property directly (e.g., element.style.color = "red";). You can also
+            use classList to add, remove, or toggle CSS classes (e.g.,
+            element.classList.add("active");).
+          </p>
         </div>
       </div>
-      <footer class="footer"></footer>
     </main>
+    <footer class="footer"></footer>
   </body>
 </html>
