@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#ffff",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="text-black" ">
+    <div class="bg-white h-5"></div>
+    <header>
+      <nav class="bg-white">
+        <div class="first-half">
+          <a href="index.html">
+            <button class="button">Home</button>
+          </a>
+          <div class="logo">
+            <img
+              src="B10A5-DOM-Quest-Build-and-Manipulate-main/assets/logo.png"
+              alt=""
+            />
+            <h1>Donate Bangladesh</h1>
+          </div>
+          <div class="wallet">
+            <img
+              src="B10A5-DOM-Quest-Build-and-Manipulate-main/assets/coin.png"
+              alt=""
+            />
+            <h1>5500 BDT</h1>
+          </div>
+        </div>
+        <div class="mt-10 flex justify-center">
+          <button class="button2">Donate</button>
+          <button class="button2">History</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="collapse collapse-arrow">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl text-black font-medium">
+          What is the Document Object Model (DOM)?
+        </div>
+        <div class="collapse-content text-black">
+          <p>The Document Object Model (DOM) is a programming interface for web documents. It represents a webpage's structure as a tree of objects, allowing programming languages like JavaScript to manipulate HTML and CSS. Through the DOM, developers can dynamically modify content, structure, and styling of web pages.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl text-black font-medium">
+          How do you select on element from the DOM?
+        </div>
+        <div class="text-black collapse-content">
+          <p>
+            To select an element from the DOM, use document.querySelector() for a single element by CSS selector or document.getElementById() for a specific ID.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium text-black">
+          What is event delegation in the context of the DOM, and why is it useful?
+        </div>
+        <div class="collapse-content text-black">
+          <p>Event delegation in the DOM is a technique where a single event listener is added to a parent element to handle events from its child elements. This is useful for efficiently managing dynamic content, reducing memory usage, and avoiding multiple event listeners by utilizing event bubbling to catch events from children.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium text-black">
+          How do you manipulate an element's attributes and styles using the DOM?
+        </div>
+        <div class="collapse-content text-black">
+          <p>To manipulate an element's attributes using the DOM, use setAttribute() and getAttribute(). For styles, modify the style property directly (e.g., element.style.color = "red";). You can also use classList to add, remove, or toggle CSS classes (e.g., element.classList.add("active");).</p>
+        </div>
+      </div>
+      <footer class="footer"></footer>
+    </main>
+  </body>
+</html>

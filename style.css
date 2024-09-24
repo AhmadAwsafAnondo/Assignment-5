@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+.lexend-font {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body{
+  background-color: white;
+}
+nav{
+  position: sticky;
+  margin: 0;
+  padding: 0;
+  height: 170px;
+}
+
+.button{
+  width: 90px;
+  height: 40px;
+  background-color: rgba(180, 244, 97, 1);
+  color: black;
+  border-radius: 5px;
+  border: none;
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  cursor: pointer;
+}
+.first-half{
+  display: flex;
+  align-items: center;
+  /* margin-left: 100px;
+  margin-right: 100px; */
+  justify-content: space-around;
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+.logo img{
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+.logo h1{
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.wallet{
+  display: flex;
+  align-items: center;
+}
+.wallet img{
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.wallet h1{
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: larger;
+  font-style: normal;
+}
+.button2{
+  width: 90px;
+  height: 40px;
+  background-color:white;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: black;
+  border-radius: 5px;
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.button2:hover{
+  background-color: rgb(192, 192, 192);
+  border: none;
+}
+.second-half{
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+.wallet2{
+  display: flex;
+  align-items: center;
+}
+.wallet2 img{
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.wallet2 h1{
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: medium;
+  font-style: normal;
+}
+.card1{
+  display: flex;
+  margin-bottom: 50px;
+}
+.card1-contents{
+  padding: 30px;
+}
+.card1-contents h1{
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: larger;
+  font-style: normal;
+}
+.card1-contents p{
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: medium;
+  font-style: normal;
+}
+#amount{
+  width: 54vw;
+  height: 6vh;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.486);
+  margin-bottom: 20px;
+}
+.donate-btn{
+  width: 54.5vw;
+  height: 7vh;
+  border-radius: 8px;
+  border: none;
+  background-color: rgba(180, 244, 97, 1);
+  cursor: pointer;
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.card2{
+  display: flex;
+  margin-bottom: 50px;
+}
+.card2-contents{
+  padding: 30px;
+}
+.card2-contents h1{
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: larger;
+  font-style: normal;
+}
+.card2-contents p{
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: medium;
+  font-style: normal;
+}
+#amount{
+  width: 54vw;
+  height: 6vh;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.486);
+  margin-bottom: 20px;
+}
+.donate-btn{
+  width: 54.5vw;
+  height: 7vh;
+  border-radius: 8px;
+  border: none;
+  background-color: rgba(180, 244, 97, 1);
+  cursor: pointer;
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.card3{
+  display: flex;
+}
+.card3-contents{
+  padding: 30px;
+}
+.card3-contents h1{
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: larger;
+  font-style: normal;
+}
+.card3-contents p{
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: medium;
+  font-style: normal;
+}
+#amount{
+  width: 54vw;
+  height: 6vh;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.486);
+  margin-bottom: 20px;
+}
+.donate-btn{
+  width: 54.5vw;
+  height: 7vh;
+  border-radius: 8px;
+  border: none;
+  background-color: rgba(180, 244, 97, 1);
+  cursor: pointer;
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.cards{
+  margin-left: 15px;
+}
+.footer{
+  height: 35vh;
+}
