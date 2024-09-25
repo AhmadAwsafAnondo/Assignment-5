@@ -32,10 +32,11 @@ const p =document.createElement('p');
 const heading1 = document.getElementById("heading1")
 const heading2 = document.getElementById("heading2")
 const heading3 = document.getElementById("heading3")
-p.innerText = `${amount} BDT is ${heading1}`
-p.innerText = `${amount} BDT is ${heading2}`
-p.innerText = `${amount} BDT is ${heading2}`
-console.log(p);
+p.innerText = `, ${amount} BDT is ${heading1}`
+p.innerText += `, ${amount} BDT is ${heading2}`
+p.innerText += `, ${amount} BDT is ${heading2}`
+// console.log(p);
+document.getElementById("transaction-container").appendChild(p);
 getCurrentTimestamp();
 // time stamp
 function getCurrentTimestamp() {
