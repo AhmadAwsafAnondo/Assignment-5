@@ -1,26 +1,43 @@
+// initial stage
+document.getElementById("cards-id").classList.remove("hidden");
+document.getElementById("transaction-section-id").classList.add("hidden");
 const donateButton = document.getElementById("donate-btn-2");
-  donateButton.addEventListener("click", function () {
+donateButton.style.backgroundColor = "rgba(180, 244, 97, 1)";
+donateButton.style.border="none";
+//toggling
+const historyButton = document.getElementById("history-btn");
+donateButton.addEventListener("click", function () {
   donateButton.style.backgroundColor = "rgba(180, 244, 97, 1)";
   donateButton.style.border = "none";
   historyButton.style.backgroundColor = "transparent";
   historyButton.style.border = "1px solid black";
+  showSection("cards-id");
 });
-const historyButton = document.getElementById("history-btn");
-  historyButton.addEventListener("click", function () {
+
+//transaction section
+function showSection(id) {
+  document.getElementById("cards-id").classList.add("hidden");
+  document.getElementById("transaction-section-id").classList.add("hidden");
+
+  document.getElementById(id).classList.remove("hidden");
+}
+historyButton.addEventListener("click", function () {
   historyButton.style.backgroundColor = "rgba(180, 244, 97, 1)";
   historyButton.style.border = "none";
   donateButton.style.backgroundColor = "transparent";
   donateButton.style.border = "1px solid black";
+  showSection("transaction-section-id");
 });
-
-let walletBalance = 5000;
-const mainBalanceDisplay = document.getElementById("main-balance");
-mainBalanceDisplay.innerText = walletBalance + " BDT";
-
-const donationBalances = [0, 0, 0];
-
-const transactions = [];
-
+const p =document.createElement('p');
+const heading1 = document.getElementById("heading1")
+const heading2 = document.getElementById("heading2")
+const heading3 = document.getElementById("heading3")
+p.innerText = `${amount} BDT is ${heading1}`
+p.innerText = `${amount} BDT is ${heading2}`
+p.innerText = `${amount} BDT is ${heading2}`
+console.log(p);
+getCurrentTimestamp();
+// time stamp
 function getCurrentTimestamp() {
   const now = new Date();
   const date = now.toLocaleDateString();
@@ -28,25 +45,12 @@ function getCurrentTimestamp() {
   return `${date}, ${time}`;
 }
 
-function addTransactionHistory(index, amount) {
-  const timestamp = getCurrentTimestamp();
-  const transaction = `Donated ${amount} BDT to Donation ${
-    index + 1
-  } on ${timestamp}`;
+//wallet section
+let walletBalance = 5000;
+const mainBalanceDisplay = document.getElementById("main-balance");
+mainBalanceDisplay.innerText = walletBalance + " BDT";
 
-  transactions.push(transaction);
-}
-
-function displayTransactionHistory() {
-  const transactionHistory = document.getElementById("transaction-history");
-  transactionHistory.innerHTML = "";
-
-  transactions.forEach((transaction) => {
-    const newTransaction = document.createElement("li");
-    newTransaction.innerText = transaction;
-    transactionHistory.appendChild(newTransaction);
-  });
-}
+const donationBalances = [0, 0, 0];
 
 function handleDonation(index) {
   const amountInput = document.getElementById(
@@ -92,5 +96,4 @@ donateButtons.forEach((button, index) => {
 
 historyButton.addEventListener("click", function (event) {
   event.preventDefault();
-  displayTransactionHistory();
 });

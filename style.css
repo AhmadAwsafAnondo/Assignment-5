@@ -20,9 +20,20 @@ nav {
   background-color: rgb(255, 255, 255);
 }
 main {
-  margin: 30vh;
+  margin-top: 35vh;
 }
-
+.wallet{
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.wallet2{
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
 .button {
   width: 90px;
   height: 40px;
@@ -237,9 +248,32 @@ main {
   margin-left: 15px;
 }
 .footer {
-  height: 5vh;
+  height: 10vh;
+}
+.hidden{
+  display: none;
+}
+.transaction-section h1{
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
 }
 @media screen and (max-width: 576px) {
+  body{
+    margin: 0;
+    width: 98%;
+  }
+  nav{
+    width: 98%;
+  }
+  main{
+    width: 100%;
+  }
+  /* .cards{
+    width: 98%;
+  } */
   .logo h1 {
     display: none;
   }
@@ -254,60 +288,60 @@ main {
     flex-direction: column;
   }
   .card1 > img {
-    width: 85vw;
+    width: 90vw;
   }
   .card1-contents {
-    width: 73vw;
+    width: 80vw;
     font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
   }
   #amount {
-    width: 71vw;
+    width: 78vw;
   }
   #donate-btn {
-    width: 72vw;
+    width: 79vw;
   }
   .card2 {
     display: flex;
     flex-direction: column;
   }
   .card2 > img {
-    width: 85vw;
+    width: 90vw;
   }
   .card2-contents {
-    width: 73vw;
+    width: 80vw;
     font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
   }
   #amount2 {
-    width: 71vw;
+    width: 78vw;
   }
   #donate-btn2 {
-    width: 72vw;
+    width: 79vw;
   }
   .card3 {
     display: flex;
     flex-direction: column;
   }
   .card3 > img {
-    width: 85vw;
+    width: 90vw;
   }
   .card3-contents {
-    width: 73vw;
+    width: 80vw;
     font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
   }
   #amount3 {
-    width: 71vw;
+    width: 78vw;
   }
   #donate-btn3 {
-    width: 72vw;
+    width: 79vw;
   }
   nav {
     height: 25vh;
