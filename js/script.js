@@ -29,14 +29,17 @@ historyButton.addEventListener("click", function () {
   showSection("transaction-section-id");
 });
 const p =document.createElement('p');
-const heading1 = document.getElementById("heading1")
-const heading2 = document.getElementById("heading2")
-const heading3 = document.getElementById("heading3")
-p.innerText = `, ${amount} BDT is ${heading1}`
-p.innerText += `, ${amount} BDT is ${heading2}`
-p.innerText += `, ${amount} BDT is ${heading2}`
-// console.log(p);
+const heading_1 = document.getElementById("heading1").innerText
+const heading_2 = document.getElementById("heading2").innerText
+const heading_3 = document.getElementById("heading3").innerText
+const amount_1 = document.getElementById("amount").innerText;
+const amount_2 = document.getElementById("amount2").innerText;
+const amount_3 = document.getElementById("amount3").innerText;
+p.innerText = `${amount_1} BDT is ${heading_1}`
+p.innerText = `${amount_2} BDT is ${heading_2}`
+p.innerText = `${amount_3} BDT is ${heading_3}`
 document.getElementById("transaction-container").appendChild(p);
+// console.log(p);
 getCurrentTimestamp();
 // time stamp
 function getCurrentTimestamp() {
